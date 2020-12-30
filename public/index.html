@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="container pt-5">
+    <form id="cv-upload-form" class="container mt-5">
+      <div class="form-group">
+        <label for="file-upload">Upload CV</label>
+        <input
+          type="file"
+          required
+          name="file-upload"
+          id="file-upload"
+          class="form-control"
+        />
+      </div>
+    </form>
+    <button class="btn btn-danger" id="generate-btn">Generate Table!</button>
+
+    <section id="generated-section" class="mt-5"></section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
